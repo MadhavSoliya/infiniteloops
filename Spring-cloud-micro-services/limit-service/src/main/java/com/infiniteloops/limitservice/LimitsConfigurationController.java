@@ -12,7 +12,6 @@ import com.infiniteloops.limitservice.bean.LimitServiceSpringCloudConfiguration;
 import com.infiniteloops.limitservice.constants.ConfigurationPropertyConstants;
 
 @RestController
-@RefreshScope
 public class LimitsConfigurationController {
 
 	@Autowired
