@@ -10,7 +10,11 @@ import com.infiniteloops.currencyconversionservice.beans.CurrencyExchangeRatesBe
 //@FeignClient(name="currency-exchange-service", url="localhost:8881")
 
 //Below can be use if ribbon.listOfServers is defined in application.properties
-@FeignClient(name="currency-exchange-service")
+//@FeignClient(name="currency-exchange-service")
+
+// Below is used when eureka server is configured
+@FeignClient(name="CURRENCY-EXCHANGE-RATES-SERVICE")
+
 public interface  FeignProxy {
 	
 	@RequestMapping("/exchange-rate/{from}/{to}")
